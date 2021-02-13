@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <title>Khetihar</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  /* background-image: url('img/coming-soon-bg.jpg'); */
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 5%;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media (max-width: 767px) {
+    #myVideo {
+        display: none;
+    }
+    body {
+        background: url('img/Khetihar-poster.png');
+        background-size: cover;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+
+</style>
+<body>
+
+<div class="bgimg">
+  <video autoplay playsinline muted id="myVideo">
+    <source src="video/Khetihar-bg720music.mp4" type="video/mp4">
+  </video>
+  <div class="topleft">
+    <!-- <p>Logo</p> -->
+    <img src="img/logo.jpg"/>
+    
+  </div>
+  <div class="middle">
+    <!-- <img src="img/logo.jpg"/> -->
+    <br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <!-- <h2><i>Khetihar - Ek Pehal </i></h2> -->
+    <hr>
+    <h1>HARVESTING SOON</h1>
+   
+   
+  </div>
+  <div class="bottomleft">
+    <p>&copy; Khetihar LLP</p>
+  </div>
+</div>
+
+</body>
+</html>
